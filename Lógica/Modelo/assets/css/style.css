@@ -65,3 +65,38 @@ form button{
 form button:hover{
     background: var(--color2);
 }
+
+
+
+.box1 {
+    /*background: var(--color);*/
+    display: inline-block;
+    float: left;
+    width:300px;
+    font-size: 16px;
+    line-height: 1;
+    /*width: 100px; 
+    height: 200px;
+    margin: 10px 20px;*/
+}
+
+
+.box2 {
+    /*background: var(--color2);*/
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    width:300px;
+    line-height: 1;
+
+
+    /*width: 100px; 
+    height: 200px;
+    margin: 10px 20px;*/
+}
+
+
+p{
+    line-height: 1;
+    font-size: 16px;
+}
