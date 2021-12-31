@@ -100,3 +100,9 @@ p{
     line-height: 1;
     font-size: 16px;
 }
+
+.paragrafo-resultado{
+    background: rgb(33, 212, 111);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
