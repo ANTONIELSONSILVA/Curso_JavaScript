@@ -8,14 +8,24 @@ form.addEventListener('submit', function(evento){
     const peso = Number(inputPeso.value);
     const altura = Number(inputAltura.value);
 
+    if(!peso){
+        setResultado('Peso inválido, false');
+        return;
+    }
+
+    if(!altura){
+        setResultado('Altura inválida', false);
+        return;
+    }
+
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
 
-    cosnt msg = `Seu IMC é ${imc} (${nivelImc})`;
+    const msg = `Seu IMC é ${imc} (${nivelImc})`;
 
 
 
-    setResultado(msg);
+    setResultado(msg, true);
 
 });
 
@@ -49,11 +59,19 @@ function criaP(){
 }
 
 
- function setResultado(msg){
+ function setResultado(msg, isValid){
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
     const p = criaP();
 
+
+    if(isValid){
+        p.classList.add('paragrafo-resultado');
+    }else{
+        p.classList.add('bad');
+    }
+
+    p.innerHTML = msg;
     resultado.appendChild(p);   
 
  };

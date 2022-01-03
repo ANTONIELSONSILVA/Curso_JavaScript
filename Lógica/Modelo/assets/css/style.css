@@ -101,8 +101,12 @@ p{
     font-size: 16px;
 }
 
-.paragrafo-resultado{
+.paragrafo-resultado, .bad{
     background: rgb(33, 212, 111);
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+.bad {
+    background: rgb(255, 150, 150);
+  }
