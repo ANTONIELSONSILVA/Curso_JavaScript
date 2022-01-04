@@ -1,4 +1,4 @@
-const data = new Date('2022-01-03 00:00:00');
+const data = new Date('2022-01-8 00:00:00');
 const diaSemana = data.getDay();
 console.log(diaSemana);
 
