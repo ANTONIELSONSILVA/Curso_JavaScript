@@ -1,14 +1,16 @@
-const data = new Date();
 
-//const diaSemana = data.getDay();
-//const mes = data.getMonth();
+
+const data = new Date();
+display();
+
+
 
 
 function geraDiaSemana(dia){
 
 const semana = ['Domingo', 'Secunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
 
-return (semana[dia] + (dia > 0 && dia < 5 ? '-Feira' : '');
+return (semana[dia] + (dia > 0 && dia < 5 ? '-Feira' : ''));
 
 
 };
@@ -37,7 +39,9 @@ function display(){
 	display.innerHTML = '';
 
 	const msg = geraDiaSemana(data.getDay()) + ', ' + data.getDate() + ' de ' 
-	+ geraMes(data.getMonth()) + ' de ' + data.getFullYear() + ' ' + data.getHours() + ':' + ata.getMinutes();
+	+ geraMes(data.getMonth()) + ' de ' + data.getFullYear() + ' ' + data.getHours() + ':' + data.getMinutes();
+
+	const p = criaP();
 
 	p.innerHTML = msg;
 
