@@ -6,3 +6,12 @@ const elementos = [
 ];
 
 
+function display() {
+
+    const display = document.querySelector('#display');
+    
+    
+
+    // usar for tambem
+
+}
