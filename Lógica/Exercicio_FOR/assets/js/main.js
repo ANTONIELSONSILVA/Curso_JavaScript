@@ -5,13 +5,23 @@ const elementos = [
     {tag: 'section', texto: 'Frase 4'}
 ];
 
+console.log(elementos.length)
 
-function display() {
+function criaElemento(elemento) {
+    const E = document.createElement(elemento);
+    return E;
+}
+
+
+
+function display(elementos) {
 
     const display = document.querySelector('#display');
     
-    
+    for(i = 0; i < elementos.length; i++){
 
-    // usar for tambem
+        criaElemento()
+
+    }
 
 }
