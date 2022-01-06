@@ -21,6 +21,11 @@ const[um,  , tres,  , cinco,  , sete] = letras;
 console.log(um, tres, cinco);
 
 
+
+
+// Atribuição via Desestruturação
 //                     0          1          2
 //                  0  1  2    0  1  2    0  1  2  
-const elementos = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+const elementos = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+const [elementos1, elementos2, elementos3] = elementos;
+console.log(elementos[1]);
