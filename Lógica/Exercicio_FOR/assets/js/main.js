@@ -5,31 +5,14 @@ const elementos = [
     {tag: 'section', texto: 'Frase 4'}
 ];
 
+const container = document.querySelector('.container');
+const div = document.createElement('div');
 
-function criaElemento(elemento) {
-    const E = document.createElement(elemento);
-    return E;
+for (let i = 0; i < elementos.length ; i++){
+    let {tag, texto} = elementos[i];
+    let tagCriada = document.createElement(tag);
+    tagCriada.innerText = texto;
+    div.appendChild(tagCriada);
 }
 
-display(elementos);
-
-
-
-function display(elementos) {
-
-    const display = document.querySelector('#container');
-
-    const elem = elementos[0].tag;
-    const msg = elementos[0].texto;
-    const e;
-    console.log(elem);
-    console.log(msg);
-
-
-    e = criaElemento(elem);
-
-    e.innerHTML = msg;
-    display.appendChild(e);
-
-}
-
+container.appendChild(div);
