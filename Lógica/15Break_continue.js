@@ -1,6 +1,16 @@
 
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+const eu = {
+    nome: 'Antonio',
+    idade: 27,
+    endereco:{
+        rua: 'Bonita',
+        numero: 69
+    }
+};
+
+
 let index = 0;
 
 do{
@@ -20,14 +30,9 @@ do{
 
 
 
-/*
-for (const iterator of object) {
+for (let i in eu) {
     
-}
+    console.log(eu[i]);
 
-
-for (const iterator of object) {
-    
 }
-*/
 
