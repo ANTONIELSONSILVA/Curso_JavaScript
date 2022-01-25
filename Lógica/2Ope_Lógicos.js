@@ -7,7 +7,7 @@
 
 */ 
 
-const expressao = true && true && true;
+const expressao = true && false && true;
 console.log(expressao);
 
 const expressao1 = true || false;
