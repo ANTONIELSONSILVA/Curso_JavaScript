@@ -5,6 +5,15 @@
     --color2: rgb(43, 64, 65);
 }
 
+
+*{
+
+    box-sizing: border-box;
+    outline: 0;
+    
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +22,6 @@ body{
     font-size: 1.3em;
     line-height: 1.5em;
 }
-
 
 .container{
     max-width: 640px;
@@ -24,6 +32,81 @@ body{
 }
 
 
-h1{
-    text-align: center;
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; 
 }
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--color);
+}
+
+form button{
+
+    border: none;
+    background:  var(--color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+
+
+}
+
+form button:hover{
+    background: var(--color2);
+}
+
+
+
+.box1 {
+    /*background: var(--color);*/
+    display: inline-block;
+    float: left;
+    width:300px;
+    font-size: 16px;
+    line-height: 1;
+    /*width: 100px; 
+    height: 200px;
+    margin: 10px 20px;*/
+}
+
+
+.box2 {
+    /*background: var(--color2);*/
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    width:300px;
+    line-height: 1;
+
+
+    /*width: 100px; 
+    height: 200px;
+    margin: 10px 20px;*/
+}
+
+
+p{
+    line-height: 1;
+    font-size: 16px;
+}
+
+.paragrafo-resultado, .bad{
+    background: rgb(33, 212, 111);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.bad {
+    background: rgb(255, 150, 150);
+  }
