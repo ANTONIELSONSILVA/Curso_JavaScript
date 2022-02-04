@@ -22,8 +22,8 @@ console.log(vaiExecutar && falaoi());
 
 
 
-
-console.log(0 || false || null || 'Rego' || true); // retorna o primeiro valor verdadeiro
+// retorna o primeiro valor verdadeiro
+console.log(0 || false || null || 'Rego' || true); 
 
 
 
